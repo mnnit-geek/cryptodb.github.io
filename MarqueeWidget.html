@@ -12,7 +12,7 @@
       var s = document.createElement("script");
       s.type = "text/javascript";
       s.async = true;
-      var theUrl = baseUrl+'serve/v3/coin/header?fsyms=BTC,ETH,BCH,XRP,LTC,ADA,MIOTA,DASH,XEM,XMR,BTG,XLM,NEO,ETC,QTUM,BCC,ZEC,LSK,WAVES,STRAT,BTS,HSR,BCN,NXT,MONA,XVG,DOGE,ARK,STEEM,DCR,KMD,SC,EMC2,PIVX,GBYTE,VTC,FCT,DGB,ETN,VEN,XRB,SYS,BTCD,CNX,XZC,NXS,GXS,GAME,NAV,ETP,PPC,BAY,PURA,SKY,MNX,UBQ,ZEN,ACT,GRS,XAS,XCP,SMART,RDD,PART,FTC,POT,XDN,LKK,VIA,RISE,VOX,KCS,NMC,XBY,AEON,FAIR,CLOAK,XWC,LBC,BURST,NEBL,ION,CRW,NLG,IOC,DMD,SIB,SBD,BCO,OK,RMC,SHIFT,DCT,XP,OMNI,XEL,BTX,BLK&tsyms=USD';
+      var theUrl = baseUrl+'serve/v3/coin/header?fsyms=BTC,ETH,BCH,XRP,LTC,ADA,MIOTA,DASH,XEM,XMR,BTG,XLM,NEO,ETC,QTUM,MONA,XVG,DOGE&tsyms=USD';
       s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
       embedder.parentNode.appendChild(s);
       })();
