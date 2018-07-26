@@ -9,7 +9,7 @@
     chatHost: "https://www.tradingview.com",
     embedStylesForCopyright: function() {
       var styleElement = document.createElement("style");
-      styleElement.innerHTML = ".tradingview-widget-copyright {font-size: 13px !important; line-height: 32px !important; text-align: center !important; vertical-align: middle !important; font-family: 'Trebuchet MS', Tahoma, Arial, sans-serif !important; color: #9db2bd !important;} .tradingview-widget-copyright .blue-text {color: #3bb3e4 !important;} .tradingview-widget-copyright a {text-decoration: none !important; color: #9db2bd !important;} .tradingview-widget-copyright a:visited {color: #9db2bd !important;} .tradingview-widget-copyright a:hover .blue-text {color: #38acdb !important;} .tradingview-widget-copyright a:active .blue-text {color: #299dcd !important;} .tradingview-widget-copyright a:visited .blue-text {color: #3bb3e4 !important;}";
+      styleElement.innerHTML = ".tradingview-widget-copyright {font-size: 33px !important; line-height: 32px !important; text-align: center !important; vertical-align: middle !important; font-family: 'Trebuchet MS', Tahoma, Arial, sans-serif !important; color: #9db2bd !important;} .tradingview-widget-copyright .blue-text {color: #3bb3e4 !important;} .tradingview-widget-copyright a {text-decoration: none !important; color: #9db2bd !important;} .tradingview-widget-copyright a:visited {color: #9db2bd !important;} .tradingview-widget-copyright a:hover .blue-text {color: #38acdb !important;} .tradingview-widget-copyright a:active .blue-text {color: #299dcd !important;} .tradingview-widget-copyright a:visited .blue-text {color: #3bb3e4 !important;}";
       return styleElement
     },
     embedStylesForFullHeight: function(height, hasCopyright, container_id) {
@@ -165,7 +165,7 @@
         width: TradingView.WidgetAbstract.prototype.fixSize(options.width) || "",
         height: TradingView.WidgetAbstract.prototype.fixSize(widgetHeight) || "",
         symbols: options.symbols,
-        //greyText: options.greyText || "",
+        greyText: options.greyText || "",
         symbols_description: options.symbols_description || "",
         large_chart_url: options.large_chart_url || "",
         customer: options.customer || "",
