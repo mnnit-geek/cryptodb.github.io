@@ -6,12 +6,11 @@
     <h1 style="color:grey; text-align:center; padding-top:10px">HODL Dashboard</h1>
 
     <!-- TradingView Widget BEGIN -->
-    <div class="tradingview-widget-container" style="float:left; padding:20px">
+    <div class="tradingview-widget-container" style="float:left; padding-right:20px; padding-left:20px; padding-bottom:20px; width:65%; height:83%">
       <script type="text/javascript" src="AdvanceWidget.js"></script>
       <script type="text/javascript">
         new TradingView.widget({
-          "width": 1020,
-          "height": 610,
+          "autosize": true,
           "symbol": "COINBASE:BTCUSD",
           "interval": "D",
           "timezone": "America/New_York",
@@ -22,7 +21,7 @@
           "enable_publishing": false,
           "allow_symbol_change": true,
           "details": true,
-          "container_id": "tradingview_cc614"
+          "container_id": "tradingview_7601c"
         });
       </script>
     </div>
@@ -30,8 +29,8 @@
 
 
     <!-- CoinTelegraph Crypto News Widget BEGIN -->
-    <div style="float:left; padding-left:20px; padding-bottom:20px; padding-right:20px; margin-top: 20px; border-style: solid; border-width:thin;
-      width:310px; height:588">
+    <div style="float:left; padding-left:20px; padding-bottom:20px; padding-right:20px; border-style: solid; border-width:thin;
+      width:27%; height:80%">
       <div>
         <h1 style="text-align:center; font:23px verdana !important; text-decoration:none !important; font-weight:normal !important; color:#777777; margin-bottom:5px;">Cryptocurrency News</h1>
       </div>
@@ -41,7 +40,7 @@
 
 
     <!-- CryptoCompare Ticker Widget START -->
-    <div style="width:1380; padding:20px; float:left">
+    <div style="width:96%; padding:15px; float:left">
       <script type="text/javascript">
         baseUrl = "https://widgets.cryptocompare.com/";
         var scripts = document.getElementsByTagName("script");
