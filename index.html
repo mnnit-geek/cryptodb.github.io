@@ -1,23 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html>
-  <body>
-    <div>
-      <!-- TradingView Widget BEGIN -->
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget">
-        </div>
-          <div class="tradingview-widget-copyright">
-          <a href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"></a>
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
-              {"width": "100%",
-              "height": "100%",
-              "defaultColumn": "overview",
-              "screener_type": "crypto_mkt",
-              "displayCurrency": "USD",
-              "locale": "en"}
-            </script>
-          </div>
-          <!-- TradingView Widget END -->
-        </div>
-      </body>
-    </html>
+
+<body>
+  <div>
+    <h1 style="color:grey; text-align:center;">HODL Dashboard</h1>
+
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container" style="float:left; padding:20px">
+      <script type="text/javascript" src="AdvanceWidget.js"></script>
+      <script type="text/javascript">
+        new TradingView.widget({
+          "width": 980,
+          "height": 610,
+          "symbol": "COINBASE:BTCUSD",
+          "interval": "D",
+          "timezone": "America/New_York",
+          "theme": "Light",
+          "style": "1",
+          "locale": "en",
+          "toolbar_bg": "#f1f3f6",
+          "enable_publishing": false,
+          "allow_symbol_change": true,
+          "details": true,
+          "container_id": "tradingview_cc614"
+        });
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+
+
+    <!-- CryptoRival News Widget BEGIN -->
+    <div style="float:left; padding-left:20px; padding-bottom:20px; padding-right:20px; margin-top: 20px; border-style: solid; border-width:thin;">
+      <script type="text/javascript" src="NewsWidget.js"></script>
+      <script type="text/javascript">
+        showNews('350', false, '0', 'FF9933', 'FF9933', 'FF9933', '777777', '535');
+      </script>
+    </div>
+    <!-- CryptoRival News Widget END -->
+
+
+    <!-- TradingView Technical Analysis Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-copyright">
+        <a href="https://www.tradingview.com/symbols/CME-BTC1!/technicals/" rel="noopener" target="_blank">
+            <span class="blue-text">Technical Analysis for BTC1!</span>
+          </a>
+      </div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+        {
+          "width": "500",
+          "height": "450",
+          "symbol": "CME:BTC1!",
+          "locale": "en",
+          "interval": "1D"
+        }
+      </script>
+    </div>
+    <!-- TradingView Technical Analysis Widget END -->
+
+    <!-- TradingView Cryptos All BEGIN -->
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-copyright">
+        <a href="https://www.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank">
+            <span class="blue-text">Cryptocurrency Markets</span>
+          </a>
+      </div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+        {
+          "width": "1000",
+          "height": "490",
+          "defaultColumn": "overview",
+          "screener_type": "crypto_mkt",
+          "displayCurrency": "USD",
+          "locale": "en"
+        }
+      </script>
+    </div>
+    <!-- TradingView Cryptos All END -->
+
+  </div>
+</body>
+
+</html>
