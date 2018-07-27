@@ -1492,8 +1492,8 @@
           category: null,
           size: "auto",
           selflink: !1,
-          footerColor: "",
-          height: "515px", // Parameter to control widget height
+          footerColor: "blue",
+          height: "570%", // Parameter to control widget height
           // position: "relative"
         },
         newsParams: {
