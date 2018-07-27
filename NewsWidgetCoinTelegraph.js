@@ -1412,7 +1412,7 @@
             size: "auto",
             selflink: !1,
             footerColor: "",
-            height: 100
+            height: "100%"
           },
           coins: ["BTC", "ETH"],
           currency: "USD"
@@ -1491,10 +1491,10 @@
           images: !1,
           category: null,
           size: "auto",
+          overflow: "auto",
           selflink: !1,
           footerColor: "blue",
-          height: "570%", // Parameter to control widget height
-          // position: "relative"
+          height: "800%", // Parameter to control widget height
         },
         newsParams: {
           limit: 5
