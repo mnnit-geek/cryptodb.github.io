@@ -1416,7 +1416,7 @@
           },
           coins: ["BTC", "ETH"],
           currency: "USD"
-        }, this.options = e.extend({}, this._defaults, i), this.template = '<div class="ct-widget-container" style="height:93% !important"><div class="ct-widget"><div class="ct-widget__body" {bodyAttr}><div class="ct-widget__posts">{news}</div></div><div class="ct-widget__footer">{footer}</div></div></div>', this.arWidgetClassMap = {
+        }, this.options = e.extend({}, this._defaults, i), this.template = '<div class="ct-widget-container" style="height:100% !important"><div class="ct-widget"><div class="ct-widget__body" {bodyAttr}><div class="ct-widget__posts">{news}</div></div><div class="ct-widget__footer">{footer}</div></div></div>', this.arWidgetClassMap = {
           ".ct-widget": function(t) {
             return ["ct-widget_theme_" + ("light" === t.theme ? "light" : "dark"), function(t) {
               var e = {
@@ -1486,12 +1486,11 @@
         coins: ["BTC", "ETH"],
         currency: "USD",
         widgetConfig: {
-          theme: "light",
+          theme: "dark",
           priceindex: !1,
           images: !1,
           category: null,
           size: "auto",
-          overflow: "auto",
           selflink: !1,
           footerColor: "blue",
           height: "100% !important", // Parameter to control widget height
