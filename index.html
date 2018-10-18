@@ -7,117 +7,199 @@
   <link rel="icon" href=legg_favicon.ico type="image/x-icon">
   <link rel="shortcut icon" href=legg_favicon.ico type="image/x-icon">
   </meta>
+  <link href="css/menu.css" rel="stylesheet">
 </head>
 
 
 <body>
   <div>
     <h1 style="color:grey; text-align:center; padding-top:10px">HODLER's Dashboard</h1>
+    <!-- start header -->
+    <header>
+      <div class="container">
+        <div class="navbar navbar-static-top">
+          <div class="navigation">
+            <nav>
+              <ul class="nav topnav bold">
+                <li>
+                  <a href="http://www.cryptodashboard.tk">Home </a>
+                  <!-- <ul class="dropdown-menu bold">
+                    <li><a href="http://www.cryptodashboard.tk">About Us</a></li>
+                    <li><a href="http://www.cryptodashboard.tk">The Gang</a></li>
+                    <li><a href="http://www.cryptodashboard.tk">Homepage 4</a></li>
+                  </ul> -->
+                </li>
+                <li class="dropdown">
+                  <a href="#">Research <i class="icon-angle-down"></i></a>
+                  <ul style="display: none;" class="dropdown-menu bold">
+                    <li><a href="https://leggmason.sharepoint.com/:w:/r/sites/TeamHODL/_layouts/15/Doc.aspx?sourcedoc=%7BC100A315-0042-431F-99B0-223D02020174%7D&file=Bitcoin%20Price%20Simulation%20and%20Impact%20on%20LM%20Funds.docx&action=default&mobileredirect=true">Bitcoin and LM Funds</a></li>
+                    <li><a href="https://leggmason.sharepoint.com/sites/TeamHODL/Shared%20Documents/General/TsaiRatio.pdf">Tsai Ratio</a></li>
+                    <li><a href="https://coinatmradar.com/charts/#growth">Bitcoin ATM Stats</a></li>
+                    <li><a href="https://leggmason.sharepoint.com/:p:/r/sites/TeamHODL/_layouts/15/Doc.aspx?sourcedoc=%7Bc2a5caf8-db5e-4635-a5fa-5ed9ee4396bc%7D&action=edit&uid=%7BC2A5CAF8-DB5E-4635-A5FA-5ED9EE4396BC%7D&ListItemId=58&ListId=%7B81EE92BF-1469-494C-BB1F-97EAF900DC67%7D&odsp=1&env=prod">Todd's Deck</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Education <i class="icon-angle-down"></i></a>
+                  <ul class="dropdown-menu bold">
+                    <li><a href="https://www.coindesk.com/information/">Blockchain 101</a></li>
+                    <li><a href="https://www.coindesk.com/information/is-bitcoin-legal/">Bitcoin Legal?</a></li>
+                    <li><a href="https://www.coursera.org/learn/cryptocurrency">Princeton Bitcoin MOOC</a></li>
+                    <li><a href="https://github.com/bitcoinbook/bitcoinbook/blob/develop/book.asciidoc">Mastering Bitcoin</a></li>
+                    <li><a href="https://a16z.com/2018/02/10/crypto-readings-resources/">A16Z: Crypto Canon</a></li>
+                    <li class="dropdown"><a href="#">Podcasts/Videos <i class="icon-angle-right"></i></a>
+                      <ul style="display: none;" class="dropdown-menu sub-menu-level1 bold">
+                        <li><a href="http://unchainedpodcast.co/">Unchained</a></li>
+                        <li><a href="https://thebitcoinpodcast.com/">The Bitcoin Podcast</a></li>
+                        <li><a href="https://www.youtube.com/user/aantonop">Andreas Antonopoulos</a></li>
+                        <li><a href="https://www.coinmastery.com/">Coin Mastery</a></li>
+                        <li><a href="http://investorfieldguide.com/hashpower/">Hash Power</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Investments <i class="icon-angle-down"></i></a>
+                  <ul style="display: none;" class="dropdown-menu bold">
+                    <li><a href="https://www.coindesk.com/category/markets-news/investments/">Investments</a></li>
+                    <li><a href="https://www.coindesk.com/ico-tracker/">ICO Tracker</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">Legal <i class="icon-angle-down"></i></a>
+                  <ul class="dropdown-menu bold">
+                    <li><a href=""></a></li>
+                    <li><a href="https://www.coindesk.com/category/business-news/legal/regulation-legal/">Regulation</a></li>
+                    <li><a href="https://www.coindesk.com/category/business-news/legal/central-banking/">Central Banking</a></li>
+                    <li><a href="https://www.coindesk.com/category/business-news/legal/tax/">Tax</a></li>
+                    <li><a href="https://www.coindesk.com/category/business-news/legal/us-canada/">US & Canada</a></li>
+                    <li><a href="https://www.coindesk.com/category/business-news/legal/asia-pacific/">Asia Pacific</a></li>
+                    <li><a href="https://www.coindesk.com/category/business-news/legal/europe/">Europe</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="http://www.cryptodashboard.tk">About Us </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- end navigation -->
+        </div>
+      </div>
+  </div>
+  </div>
+  </header>
+  <!-- end header -->
 
-    <!-- TradingView Widget BEGIN -->
-    <div class="tradingview-widget-container" style="float:left; padding-right:5px; padding-left:20px; width:70%; height:90%">
-      <script type="text/javascript" src="AdvanceWidget.js"></script>
-      <script type="text/javascript">
-        new TradingView.widget({
-          "autosize": true,
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container" style="float:left; padding-right:5px; padding-left:20px; width:70%; height:90%">
+    <script type="text/javascript" src="AdvanceWidget.js"></script>
+    <script type="text/javascript">
+      new TradingView.widget({
+        "autosize": true,
+        "symbol": "COINBASE:BTCUSD",
+        "interval": "D",
+        "timezone": "America/New_York",
+        "theme": "Light",
+        "style": "1",
+        "locale": "en",
+        "toolbar_bg": "#f1f3f6",
+        "enable_publishing": false,
+        "allow_symbol_change": true,
+        "details": true,
+        "news": [
+          "headlines"
+        ],
+        "container_id": "tradingview_7601c"
+      });
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+
+  <!-- Technical Analysis Widget BEGIN -->
+  <div style="float:left;padding-bottom:10px; width:25%; height:35%">
+    <div class="tradingview-widget-container">
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
+        {
+          "width": "100%",
+          "height": "100%",
           "symbol": "COINBASE:BTCUSD",
-          "interval": "D",
-          "timezone": "America/New_York",
-          "theme": "Light",
-          "style": "1",
           "locale": "en",
-          "toolbar_bg": "#f1f3f6",
-          "enable_publishing": false,
-          "allow_symbol_change": true,
-          "details": true,
-          "news": [
-            "headlines"
-          ],
-          "container_id": "tradingview_7601c"
-        });
+          "interval": "4h"
+        }
+      </script>
+    </div>
+  </div>
+  <!-- Technical Analysis Widget END -->
+
+  <!-- CoinTelegraph Crypto News Widget BEGIN -->
+  <div style="float:left; padding-left:20px; padding-bottom:20px; padding-right:35px; border-style: solid; border-width:thin; border-color:#d8d8d8;
+      width:22%; height:51.5%">
+    <div>
+      <h1 style="text-align:center; font:18px verdana !important; text-decoration:none !important; font-weight:normal !important; color:#777777; margin-bottom:10px;">
+          All Things Crypto
+        </h1>
+    </div>
+    <script src="NewsWidgetCoinTelegraph.js" data-ct-widget-limit="50" data-ct-widget-theme="light" data-ct-widget-images="true"></script>
+  </div>
+  <!-- CoinTelegraph News Widget END -->
+
+
+  <!-- CryptoCompare Ticker Widget START -->
+  <div style="width:96%; padding:15px; float:left">
+    <script type="text/javascript">
+      baseUrl = "https://widgets.cryptocompare.com/";
+      var scripts = document.getElementsByTagName("script");
+      var embedder = scripts[scripts.length - 1];
+      var cccTheme = {
+        "General": {
+          "enableMarquee": true
+        }
+      };
+      (function() {
+        var appName = encodeURIComponent(window.location.hostname);
+        if (appName == "") {
+          appName = "local";
+        }
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        var theUrl = baseUrl + 'serve/v3/coin/header?fsyms=BTC,ETH,BCH,XRP,LTC,ADA,MIOTA,DASH,XEM,XMR,BTG,XLM,NEO,ETC,QTUM,MONA,XVG,DOGE&tsyms=USD';
+        s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+        embedder.parentNode.appendChild(s);
+      })();
+    </script>
+  </div>
+  <!-- CryptoCompare Ticker Widget END -->
+
+
+  <!-- TradingView Cryptos All BEGIN -->
+  <div style="padding:20px; float:left; width:100%; height:100%">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+        {
+          "width": "99%",
+          "height": "100%",
+          "defaultColumn": "overview",
+          "screener_type": "crypto_mkt",
+          "displayCurrency": "USD",
+          "locale": "en",
+          "transparency": true
+        }
       </script>
     </div>
     <!-- TradingView Widget END -->
-
-    <!-- Technical Analysis Widget BEGIN -->
-    <div style="float:left;padding-bottom:10px; width:25%; height:35%">
-      <div class="tradingview-widget-container">
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-technical-analysis.js" async>
-          {
-            "width": "100%",
-            "height": "100%",
-            "symbol": "COINBASE:BTCUSD",
-            "locale": "en",
-            "interval": "4h"
-          }
-        </script>
-      </div>
-    </div>
-    <!-- Technical Analysis Widget END -->
-
-    <!-- CoinTelegraph Crypto News Widget BEGIN -->
-    <div style="float:left; padding-left:20px; padding-bottom:20px; padding-right:35px; border-style: solid; border-width:thin; border-color:#d8d8d8;
-      width:22%; height:51.5%">
-      <div>
-        <h1 style="text-align:center; font:18px verdana !important; text-decoration:none !important; font-weight:normal !important; color:#777777; margin-bottom:10px;">
-          All Things Crypto
-        </h1>
-      </div>
-      <script src="NewsWidgetCoinTelegraph.js" data-ct-widget-limit="50" data-ct-widget-theme="light" data-ct-widget-images="true"></script>
-    </div>
-    <!-- CoinTelegraph News Widget END -->
-
-
-    <!-- CryptoCompare Ticker Widget START -->
-    <div style="width:96%; padding:15px; float:left">
-      <script type="text/javascript">
-        baseUrl = "https://widgets.cryptocompare.com/";
-        var scripts = document.getElementsByTagName("script");
-        var embedder = scripts[scripts.length - 1];
-        var cccTheme = {
-          "General": {
-            "enableMarquee": true
-          }
-        };
-        (function() {
-          var appName = encodeURIComponent(window.location.hostname);
-          if (appName == "") {
-            appName = "local";
-          }
-          var s = document.createElement("script");
-          s.type = "text/javascript";
-          s.async = true;
-          var theUrl = baseUrl + 'serve/v3/coin/header?fsyms=BTC,ETH,BCH,XRP,LTC,ADA,MIOTA,DASH,XEM,XMR,BTG,XLM,NEO,ETC,QTUM,MONA,XVG,DOGE&tsyms=USD';
-          s.src = theUrl + (theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
-          embedder.parentNode.appendChild(s);
-        })();
-      </script>
-    </div>
-    <!-- CryptoCompare Ticker Widget END -->
-
-
-    <!-- TradingView Cryptos All BEGIN -->
-    <div style="padding:20px; float:left; width:100%; height:100%">
-      <!-- TradingView Widget BEGIN -->
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
-          {
-            "width": "99%",
-            "height": "100%",
-            "defaultColumn": "overview",
-            "screener_type": "crypto_mkt",
-            "displayCurrency": "USD",
-            "locale": "en",
-            "transparency": true
-          }
-        </script>
-      </div>
-      <!-- TradingView Widget END -->
-    </div>
-    <!-- TradingView Cryptos All END -->
+  </div>
+  <!-- TradingView Cryptos All END -->
 
   </div>
+
+  <!-- javascript for menu widget
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 
 </html>
