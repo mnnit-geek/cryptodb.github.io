@@ -1446,7 +1446,7 @@
           return !0 === t.config.images && (n = n.replace("{image_html}", '<div class="ct-post__meta"><a href="{share_url}" {target_link}><img src="{thumb}" class="ct-post__image" alt=""/></a></div>')), !1 === t.config.selflink && (n = n.replace(/\{target_link\}/g, 'target="_blank"')), e.eachTemplate(n, i.news)
         },
         footer: function(t, e) {
-          var n = '<div class="ct-widget__powered">Powered by <a href="https://cointelegraph.com" target="_blank" class="ct-widget__poweredLink">CoinTelegraph</a></div>';
+          var n = '<div class="ct-widget__powered">Powered by <a href="https://leggmason.com" target="_blank" class="ct-widget__poweredLink">Legg Mason</a></div>';
           if (!0 === t.config.priceindex) {
             var r = i({
               data: e.priceindex,
